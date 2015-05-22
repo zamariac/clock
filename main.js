@@ -1,15 +1,19 @@
-var myDate = new Date();
 
 function clock(){
-    console.log("clock")
+    var myDate = new Date();
+    // console.log("clock")
     console.log(myDate);
-    
+
+    var clock=document.getElementById("clock")
+    clock.innerHTML= myDate
+   
 }
+    // clock()
 
-var clock=document.getElementById("clock")
 
-clock.innerHTML= myDate
-var intervalId= setInterval (clock, 1000);
+setInterval(clock,1000);
+
+// var intervalId= setInterval (clock, 1000);
 
 
 
