@@ -6,8 +6,15 @@ function clock(){
 
     var clock=document.getElementById("clock")
     clock.innerHTML= myDate
+
+    var h = myDate.getHours();
+    var m = myDate.getMinutes();
+    var s = myDate.getSeconds();
    
+    document.getElementById("clock").innerHTML= "h" + ":" +"m" + ":" + "s";
+
 }
+    
     // clock()
 
 
