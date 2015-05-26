@@ -11,11 +11,12 @@ function clock(){
     var m = myDate.getMinutes();
     var s = myDate.getSeconds();
    
-    document.getElementById("clock").innerHTML= "h" + ":" +"m" + ":" + "s";
-
+    document.getElementById("clock").innerHTML= h + ":" +m + ":" + s;
+    console.log((s*255/60));
+    document.getElementById("background").style.background= "RGB(" + Math.floor(s*255/60) + "," + m + "," + Math.floor(s*255/60) + ")"
 }
     
-    // clock()
+    // clock()2 
 
 
 setInterval(clock,1000);
